@@ -32,7 +32,7 @@ public class Form3 extends JFrame {
                 try (Connection connection = DriverManager.getConnection(url, user, password)) {
                     System.out.println("Conectado a la base de datos");
 
-                    String query = "SELECT * FROM PACIENTE WHERE Cedula_EST = ?";
+                    String query = "SELECT * FROM PACIENTE WHERE cedula = ?";
                     PreparedStatement statement = connection.prepareStatement(query);
                     statement.setString(1, BCI.getText());
                     ResultSet resultSet = statement.executeQuery();
