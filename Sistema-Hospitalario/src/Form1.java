@@ -33,6 +33,8 @@ public class Form1 {
 
                     if (resultSet.next()) {
                         JOptionPane.showMessageDialog(null, "Usuario y Password Correcto");
+
+
                         Form2 form2 = new Form2();
                         form2.setVisible(true);
                         form2.setSize(800, 600);
@@ -40,8 +42,10 @@ public class Form1 {
                         form2.pack();
                         form2.setLocationRelativeTo(null);
 
+
                     } else {
                         JOptionPane.showMessageDialog(null, "Usuario o Password Incorrecto");
+
                     }
                 } catch (SQLException exception) {
                     throw new RuntimeException(exception);
@@ -59,6 +63,7 @@ public class Form1 {
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
+
     }
 }
 

@@ -78,6 +78,7 @@ public class Form3 extends JFrame {
                 form2.setPreferredSize(new Dimension(650, 400));
                 form2.pack();
                 form2.setLocationRelativeTo(null);
+                dispose();
             }
         });
     }
