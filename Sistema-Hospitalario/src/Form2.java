@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
@@ -67,6 +68,17 @@ public class Form2 extends JFrame {
                 } catch (SQLException ex) {
                     ex.printStackTrace();
                 }
+            }
+        });
+        siguienteButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Form3 form3 = new Form3();
+                form3.setVisible(true);
+                form3.setSize(800, 600);
+                form3.setPreferredSize(new Dimension(650, 400));
+                form3.pack();
+                form3.setLocationRelativeTo(null);
             }
         });
     }
