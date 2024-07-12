@@ -33,6 +33,13 @@ public class Form1 {
 
                     if (resultSet.next()) {
                         JOptionPane.showMessageDialog(null, "Usuario y Password Correcto");
+                        Form2 form2 = new Form2();
+                        form2.setVisible(true);
+                        form2.setSize(800, 600);
+                        form2.setPreferredSize(new Dimension(650, 400));
+                        form2.pack();
+                        form2.setLocationRelativeTo(null);
+
                     } else {
                         JOptionPane.showMessageDialog(null, "Usuario o Password Incorrecto");
                     }
